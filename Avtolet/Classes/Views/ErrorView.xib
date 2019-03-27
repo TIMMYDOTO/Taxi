@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ErrorView" customModule="Avtolet" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="R97-05-b7K" id="rK3-E7-uZj"/>
+                <outlet property="label" destination="tWx-Me-MM6" id="iTy-BR-jZA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="212"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWx-Me-MM6">
+                    <rect key="frame" x="10" y="10" width="355" height="152"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R97-05-b7K">
+                    <rect key="frame" x="10" y="172" width="355" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonTapped" destination="-1" eventType="touchUpInside" id="PzG-et-kHe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="R97-05-b7K" secondAttribute="trailing" constant="10" id="8TY-hu-JrM"/>
+                <constraint firstAttribute="trailing" secondItem="tWx-Me-MM6" secondAttribute="trailing" constant="10" id="9wy-gW-pdV"/>
+                <constraint firstItem="R97-05-b7K" firstAttribute="top" secondItem="tWx-Me-MM6" secondAttribute="bottom" constant="10" id="KEZ-OA-cJP"/>
+                <constraint firstItem="R97-05-b7K" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="RvE-j3-8IL"/>
+                <constraint firstItem="tWx-Me-MM6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="T8l-un-CBj"/>
+                <constraint firstItem="tWx-Me-MM6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="khk-qw-SIK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="R97-05-b7K" secondAttribute="bottom" constant="10" id="tYH-5o-52h"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="-174"/>
+        </view>
+    </objects>
+</document>

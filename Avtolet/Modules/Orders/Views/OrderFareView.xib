@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OrderFareView" customModule="Avtolet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nb7-Xc-WfO">
+                    <rect key="frame" x="333" y="26" width="42" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cLe-ic-LMZ">
+                    <rect key="frame" x="0.0" y="10" width="42" height="37"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tSZ-zo-mBS" customClass="DashedLineView" customModule="Avtolet" customModuleProvider="target">
+                    <rect key="frame" x="46" y="41" width="283" height="2"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="jFC-kJ-2dg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nb7-Xc-WfO" secondAttribute="trailing" id="2PP-j8-lCo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="cLe-ic-LMZ" secondAttribute="bottom" constant="2" id="4Bk-Lz-kzC"/>
+                <constraint firstItem="nb7-Xc-WfO" firstAttribute="baseline" secondItem="cLe-ic-LMZ" secondAttribute="baseline" id="H3T-hf-V9y"/>
+                <constraint firstItem="nb7-Xc-WfO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cLe-ic-LMZ" secondAttribute="trailing" constant="10" id="MEw-71-5jU"/>
+                <constraint firstItem="cLe-ic-LMZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="N1g-Oq-LHB"/>
+                <constraint firstItem="nb7-Xc-WfO" firstAttribute="leading" secondItem="tSZ-zo-mBS" secondAttribute="trailing" constant="4" id="YH7-Kc-7cI"/>
+                <constraint firstItem="nb7-Xc-WfO" firstAttribute="bottom" secondItem="tSZ-zo-mBS" secondAttribute="bottom" constant="4" id="kXi-gh-MZP"/>
+                <constraint firstItem="cLe-ic-LMZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wJE-GJ-u4k"/>
+                <constraint firstItem="tSZ-zo-mBS" firstAttribute="leading" secondItem="cLe-ic-LMZ" secondAttribute="trailing" constant="4" id="y7t-rC-boC"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="leftLabel" destination="cLe-ic-LMZ" id="UX0-3L-sVq"/>
+                <outlet property="rightConstraint" destination="2PP-j8-lCo" id="qhj-IO-k1u"/>
+                <outlet property="rightLabel" destination="nb7-Xc-WfO" id="3xg-Ve-hgA"/>
+                <outlet property="separator" destination="tSZ-zo-mBS" id="3pb-3N-Eb5"/>
+                <outlet property="topConstraint" destination="N1g-Oq-LHB" id="7vC-Xc-Hqs"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="362.5"/>
+        </view>
+    </objects>
+</document>

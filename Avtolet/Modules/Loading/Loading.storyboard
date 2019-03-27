@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0pP-Bj-GVD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loading View Controller-->
+        <scene sceneID="NSB-xF-W2Z">
+            <objects>
+                <viewController storyboardIdentifier="LoadingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0pP-Bj-GVD" customClass="LoadingViewController" customModule="Avtolet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3SN-kt-Wk4"/>
+                        <viewControllerLayoutGuide type="bottom" id="fhF-hF-fBC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XkT-xd-whq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ELJ-8Y-pJv">
+                                <rect key="frame" x="20" y="180" width="335" height="227"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ELJ-8Y-pJv" secondAttribute="height" multiplier="28:19" id="ks6-5H-Tq7"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8av-dN-17e" customClass="MaterialActivityIndicatorView" customModule="MaterialActivityIndicator">
+                                <rect key="frame" x="172" y="407" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="FWb-re-1hL"/>
+                                    <constraint firstAttribute="height" constant="30" id="q6a-GB-cCj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ELJ-8Y-pJv" secondAttribute="trailing" constant="20" id="5B2-3W-15l"/>
+                            <constraint firstItem="8av-dN-17e" firstAttribute="centerX" secondItem="XkT-xd-whq" secondAttribute="centerX" id="7Fo-GM-aB5"/>
+                            <constraint firstItem="8av-dN-17e" firstAttribute="top" secondItem="ELJ-8Y-pJv" secondAttribute="bottom" id="Nwo-gZ-5rY"/>
+                            <constraint firstItem="ELJ-8Y-pJv" firstAttribute="centerY" secondItem="XkT-xd-whq" secondAttribute="centerY" constant="-40" id="UKP-as-h6s"/>
+                            <constraint firstItem="ELJ-8Y-pJv" firstAttribute="width" secondItem="ELJ-8Y-pJv" secondAttribute="height" multiplier="28:19" id="tBt-qI-j8b"/>
+                            <constraint firstItem="ELJ-8Y-pJv" firstAttribute="leading" secondItem="XkT-xd-whq" secondAttribute="leading" constant="20" id="vxo-DY-TNT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicatorView" destination="8av-dN-17e" id="ZFA-QC-UDP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1cy-fx-dWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login_logo" width="256" height="256"/>
+    </resources>
+</document>

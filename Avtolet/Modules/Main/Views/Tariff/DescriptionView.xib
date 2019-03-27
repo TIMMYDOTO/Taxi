@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="DescriptionView" customClass="DescriptionView" customModule="Avtolet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="300" verticalHuggingPriority="300" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgP-Oj-9NM">
+                    <rect key="frame" x="333" y="11" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwM-bX-pSt">
+                    <rect key="frame" x="0.0" y="10" width="323" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vwM-bX-pSt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0IJ-n6-SsA"/>
+                <constraint firstItem="rgP-Oj-9NM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="11" id="62x-Pf-EJg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="vwM-bX-pSt" secondAttribute="bottom" id="6im-2l-LHE"/>
+                <constraint firstItem="rgP-Oj-9NM" firstAttribute="leading" secondItem="vwM-bX-pSt" secondAttribute="trailing" constant="10" id="Apu-hB-ctS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rgP-Oj-9NM" secondAttribute="trailing" id="KW8-Dh-ADA"/>
+                <constraint firstItem="vwM-bX-pSt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="TXo-wV-u9r"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="leftLabel" destination="vwM-bX-pSt" id="zDS-tf-adN"/>
+                <outlet property="rightLabel" destination="rgP-Oj-9NM" id="Yen-Sn-0iw"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-254.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,22 @@
+### Headers settings
+company: Igor Tyukavkin
+
+### Xcode project settings
+project_name: avtolet
+xcodeproj_path: Avtolet.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: Avtolet
+
+# The Xcode group path to new modules
+project_group_path: Avtolet/Modules/
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Templates
+templates:
+#- {name: local_template_name, local: 'absolute/file/path'}
+- {name: module, git: 'https://github.com/Reikjavik/module-template'}
+#- {name: catalog_template_name}

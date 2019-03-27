@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AuthButtonCell" rowHeight="84" id="eOU-Pj-UYT" customClass="AuthButtonCell" customModule="Avtolet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eOU-Pj-UYT" id="ofn-04-KQK">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvj-Ea-E5c">
+                        <rect key="frame" x="20" y="10" width="335" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="fbh-Tl-tfn"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="buttonTapped" destination="eOU-Pj-UYT" eventType="touchUpInside" id="eYz-2Y-t1g"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Nvj-Ea-E5c" secondAttribute="bottom" constant="10" id="3DA-z7-SeS"/>
+                    <constraint firstAttribute="trailing" secondItem="Nvj-Ea-E5c" secondAttribute="trailing" constant="20" id="Bo5-lU-ieh"/>
+                    <constraint firstItem="Nvj-Ea-E5c" firstAttribute="top" secondItem="ofn-04-KQK" secondAttribute="top" constant="10" id="NoP-8z-qMM"/>
+                    <constraint firstItem="Nvj-Ea-E5c" firstAttribute="leading" secondItem="ofn-04-KQK" secondAttribute="leading" constant="20" id="der-4t-70E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="button" destination="Nvj-Ea-E5c" id="BxW-la-49k"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
